@@ -13,7 +13,7 @@ plt.rcParams['axes.unicode_minus'] = False
 warnings.filterwarnings("ignore")
 
 # Load dataset
-df = pd.read_csv('/Users/yiningtang/PycharmProjects/pythonProject1/venv/Machine Learning机器学习/Y2_top 15.csv')
+df = pd.read_csv('/Users/yiningtang/PycharmProjects/pythonProject1/venv/Machine Learning/Y2_top.csv')
 
 # Split features and target
 X = df.drop(['Y'], axis=1)
