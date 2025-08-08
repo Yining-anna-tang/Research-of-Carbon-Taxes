@@ -10,7 +10,7 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-df = pd.read_csv('/Users/yiningtang/PycharmProjects/pythonProject1/venv/Machine Learning机器学习/Y2_top 15.csv')
+df = pd.read_csv('/Users/yiningtang/PycharmProjects/pythonProject1/venv/Machine Learning/Y2_top.csv')
 from sklearn.model_selection import train_test_split, KFold
 
 from sklearn.model_selection import train_test_split
@@ -35,4 +35,5 @@ ale_eff = ale(
 )
 
 ale_eff = ale(X=X_test, model=rf_model, feature=["ESK", "UGCCI"], grid_size=100)
-plt.savefig("26.Y2-ESK+UGCCI-离散特征交互图.pdf", format='pdf',bbox_inches='tight',dpi=1200)
+plt.savefig("26.Y2-ESK+UGCCI.pdf", format='pdf',bbox_inches='tight',dpi=1200)
+
