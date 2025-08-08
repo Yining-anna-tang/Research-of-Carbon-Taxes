@@ -13,8 +13,7 @@ from xgboost import XGBRegressor
 from sklearn.model_selection import GridSearchCV, KFold
 from sklearn.metrics import mean_squared_error, r2_score
 
-# /Users/yiningtang/PycharmProjects/pythonProject1/Y4治理信任.csv
-df = pd.read_csv(r'/Users/yiningtang/PycharmProjects/pythonProject1/venv/Machine Learning机器学习/Y2_top 15.csv', encoding ="GBK")
+df = pd.read_csv(r'/Users/yiningtang/PycharmProjects/pythonProject1/venv/Machine Learning/Y2_top.csv', encoding ="GBK")
 from sklearn.model_selection import train_test_split
 
 
@@ -63,12 +62,12 @@ mae = mean_absolute_error(y_test, y_pred)
 
 mape = np.mean(np.abs((y_test - y_pred) / y_test)) * 100
 
-print("📈 XGBoost回归模型评估指标：")
+print("📈：")
 print(f"R² Score:         {r2:.4f}")
-print(f"MSE (均方误差):    {mse:.4f}")
-print(f"RMSE (均方根误差): {rmse:.4f}")
-print(f"MAE (平均绝对误差): {mae:.4f}")
-print(f"MAPE (平均绝对百分比误差): {mape:.2f}%")
+print(f"MSE:    {mse:.4f}")
+print(f"RMSE: {rmse:.4f}")
+print(f"MAE: {mae:.4f}")
+print(f"MAPE: {mape:.2f}%")
 
 
 
@@ -82,7 +81,7 @@ shap_values_Explanation = explainer(X_test)
 
 plt.figure(figsize=(10, 5), dpi=1200)
 shap.plots.bar(shap_values_Explanation, show=False, max_display=10)
-plt.savefig("16.2-1-SHAP特征重要性横向柱状总结图 (Y2-WTP).pdf", format='pdf',bbox_inches='tight', dpi=1200)
+plt.savefig("16.2-1(Y-WTP).pdf", format='pdf',bbox_inches='tight', dpi=1200)
 plt.tight_layout()
 plt.show()
 
@@ -129,7 +128,8 @@ plt.xlim(0, sorted_features_top.max() * 1.3)
 plt.xlabel(" ")
 plt.title(" ")
 plt.tight_layout()
-plt.savefig("16.2-2-SHAP特征重要性横向柱状百分比图 (Y2-WTP).pdf", format='pdf', bbox_inches='tight', dpi=300)
+plt.savefig("16.2-2 (WTP).pdf", format='pdf', bbox_inches='tight', dpi=300)
 plt.show()
+
 
 
