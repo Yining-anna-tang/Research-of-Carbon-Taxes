@@ -1,1 +1,26 @@
+"""
+Data Source
+-----------
+This study utilized questionnaire data from the Chinese General Social Survey (CGSS) dataset.
 
+About CGSS:
+-----------
+The Chinese General Social Survey (CGSS), initiated in 2003, is China’s earliest nationwide, 
+comprehensive, and continuous academic survey project. In 2003, the Department of Sociology 
+at Renmin University of China collaborated with the Survey Research Center of the Hong Kong 
+University of Science and Technology to design and launch the first CGSS and its first phase, 
+drawing on international experience and their own expertise. Since 2010, the second phase of 
+CGSS has been hosted by the National Survey Research Center at Renmin University of China.
+
+Data Access:
+------------
+In accordance with the CGSS charter, annual data are released on the CGSS official website 
+(http://cgss.ruc.edu.cn/) and the China National Survey Data Archive (CNSDA) website 
+(http://www.cnsda.org/index.php) two years after survey completion. Currently, the database 
+includes data from the following years: 2003, 2006, 2008, 2010–2013, 2015, 2017, 2018, and 2021.
+
+Note:
+-----
+Users should cite the CGSS in any publications using these data and comply with 
+the dataset’s usage agreements.
+"""
